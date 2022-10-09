@@ -2,7 +2,7 @@
   "name": "sofico",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://{nfjaramillo}.github.io",
+  "homepage": "https://nfjaramillo.github.io/Formidable",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
