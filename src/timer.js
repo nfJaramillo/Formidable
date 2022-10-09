@@ -61,10 +61,10 @@ function Timer() {
     const cardYears = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h4" color="white" gutterBottom align="center">
+                <Typography variant="h5" color="white" gutterBottom align="center">
                     Años
                 </Typography>
-                <Typography variant="h4" color="white" align="center">
+                <Typography variant="h5" color="white" align="center">
                     {years}
                 </Typography>
             </CardContent>
@@ -75,10 +75,10 @@ function Timer() {
     const cardMonths = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h4" color="white" gutterBottom align="center">
+                <Typography variant="h5" color="white" gutterBottom align="center">
                     Meses
                 </Typography>
-                <Typography variant="h4" color="white" align="center">
+                <Typography variant="h5" color="white" align="center">
                     {months}
                 </Typography>
             </CardContent>
@@ -88,10 +88,10 @@ function Timer() {
     const cardDays = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h4" color="white" gutterBottom align="center">
+                <Typography variant="h5" color="white" gutterBottom align="center">
                     Días
                 </Typography>
-                <Typography variant="h4" color="white" align="center">
+                <Typography variant="h5" color="white" align="center">
                     {days}
                 </Typography>
             </CardContent>
@@ -101,10 +101,10 @@ function Timer() {
     const cardHours = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h4"  color="white" gutterBottom align="center">
+                <Typography variant="h5"  color="white" gutterBottom align="center">
                     Horas
                 </Typography>
-                <Typography variant="h4" color="white" align="center">
+                <Typography variant="h5" color="white" align="center">
                     {hours}
                 </Typography>
             </CardContent>
@@ -114,10 +114,10 @@ function Timer() {
     const cardMinuts = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h4" color="white" gutterBottom align="center">
+                <Typography variant="h5" color="white" gutterBottom align="center">
                     Minutos
                 </Typography>
-                <Typography variant="h4" color="white" align="center">
+                <Typography variant="h5" color="white" align="center">
                     {minuts}
                 </Typography>
             </CardContent>
@@ -127,10 +127,10 @@ function Timer() {
     const cardSeconds = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h4" color="white" gutterBottom align="center">
+                <Typography variant="h5" color="white" gutterBottom align="center">
                     Segundos
                 </Typography>
-                <Typography variant="h4" color="white" align="center">
+                <Typography variant="h5" color="white" align="center">
                     {seconds}
                 </Typography>
             </CardContent>
