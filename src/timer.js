@@ -148,16 +148,16 @@ function Timer() {
     return (
         <ThemeProvider theme={theme}>
         <span>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-            <Grid item xs={3}> <Card >{cardYears}</Card> </Grid>
-            <Grid item xs={3}> <Card >{cardMonths}</Card> </Grid>
-            <Grid item xs={3}><Card >{cardDays}</Card> </Grid>
+            <Grid container rowSpacing={1} alignItems="center"  justifyContent="center" columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+            <Grid item sm={3}> <Card >{cardYears}</Card> </Grid>
+            <Grid item sm={3}> <Card >{cardMonths}</Card> </Grid>
+            <Grid item sm={3}><Card >{cardDays}</Card> </Grid>
             </Grid>
             <br/>
-            <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-            <Grid item xs={3}><Card >{cardHours}</Card> </Grid>
-            <Grid item xs={3}><Card >{cardMinuts}</Card> </Grid>
-            <Grid item xs={3}><Card >{cardSeconds}</Card> </Grid>
+            <Grid container rowSpacing={1} alignItems="center"  justifyContent="center" columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+            <Grid item sm={3}><Card >{cardHours}</Card> </Grid>
+            <Grid item sm={3}><Card >{cardMinuts}</Card> </Grid>
+            <Grid item sm={3}><Card >{cardSeconds}</Card> </Grid>
             </Grid>
         </span>
         </ThemeProvider>
