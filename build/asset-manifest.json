@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.b5637614.css",
-    "main.js": "/static/js/main.c00f7baa.js",
-    "static/js/787.2a4b89ec.chunk.js": "/static/js/787.2a4b89ec.chunk.js",
-    "static/media/Us.png": "/static/media/Us.7724cddd68fb581d28b2.png",
-    "index.html": "/index.html",
-    "main.b5637614.css.map": "/static/css/main.b5637614.css.map",
-    "main.c00f7baa.js.map": "/static/js/main.c00f7baa.js.map",
-    "787.2a4b89ec.chunk.js.map": "/static/js/787.2a4b89ec.chunk.js.map"
+    "main.css": "/Formidable/static/css/main.b5637614.css",
+    "main.js": "/Formidable/static/js/main.9d36c0ee.js",
+    "static/js/787.2a4b89ec.chunk.js": "/Formidable/static/js/787.2a4b89ec.chunk.js",
+    "static/media/Us.png": "/Formidable/static/media/Us.7724cddd68fb581d28b2.png",
+    "index.html": "/Formidable/index.html",
+    "main.b5637614.css.map": "/Formidable/static/css/main.b5637614.css.map",
+    "main.9d36c0ee.js.map": "/Formidable/static/js/main.9d36c0ee.js.map",
+    "787.2a4b89ec.chunk.js.map": "/Formidable/static/js/787.2a4b89ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5637614.css",
-    "static/js/main.c00f7baa.js"
+    "static/js/main.9d36c0ee.js"
   ]
 }
