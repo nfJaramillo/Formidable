@@ -7,7 +7,7 @@ import Timer from './timer'
 function App() {
 
 
-// Version 1.2 for buildpacks
+// Version 1.3 for github pages
   return (
     <div className="App">
         <img src={logo} className="App-logo" alt="logo" />
