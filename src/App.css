@@ -38,3 +38,17 @@
   }
 
 }
+
+@media only screen and (max-width: 286px) {
+  .App {
+    min-height: 125vh;
+  }
+
+}
+
+@media only screen and (max-width: 231px) {
+  .App {
+    min-height: 150vh;
+  }
+
+}
