@@ -154,13 +154,13 @@ function Timer() {
     return (
         <ThemeProvider theme={theme}>
             <span>
-                <Grid container rowSpacing={1} alignItems="center" justifyContent="center" columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid container rowSpacing={1} alignItems="center" justifyContent="center" columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
                     <Grid item sm={4}> <Card >{cardYears}</Card> </Grid>
                     <Grid item sm={4}> <Card >{cardMonths}</Card> </Grid>
                     <Grid item sm={4}><Card >{cardDays}</Card> </Grid>
                 </Grid>
                 <br />
-                <Grid container rowSpacing={1} alignItems="center" justifyContent="center" columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                <Grid container rowSpacing={1} alignItems="center" justifyContent="center" columnSpacing={{ xs: 1, sm: 2, md: 2 }}>
                     <Grid item sm={4}><Card >{cardHours}</Card> </Grid>
                     <Grid item sm={4}><Card >{cardMinuts}</Card> </Grid>
                     <Grid item sm={4}><Card >{cardSeconds}</Card> </Grid>

@@ -12,14 +12,13 @@
 
 
 .App-logo {
-  max-height: 50vh;
+  max-height: 60vh;
   max-width: 30vw;
   margin: 10vw;
 }
 
 .timer{
   min-width: 50vw;
-  margin-right: 10vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -35,7 +34,6 @@
   .timer{
     
     width: 100vw;
-    margin-right: 0;
     margin-bottom: 10vw;
   }
 
