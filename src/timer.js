@@ -8,9 +8,6 @@ import { Grid } from "@mui/material";
 import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 
-const starts = moment('2022-10-07 19:55:00')
-
-
 
 function Timer() {
     const [years, setYears] = useState(Update('year'));
@@ -20,8 +17,9 @@ function Timer() {
     const [minuts, setMinuts] = useState(Update('minut'));
     const [seconds, setSeconds] = useState(Update('second'));
 
-
     useEffect(() => {
+
+
         setTimeout(() => {
             setYears(Update('year'))
             setMonths(Update('month'))
@@ -34,26 +32,34 @@ function Timer() {
 
 
     function Update(type) {
+
+        var starts = moment('2022-10-07 19:55:00')
+
         var ends = moment()
-        var diff = moment.duration(ends.diff(starts));
+
 
         if (type === 'year') {
-            return diff.years()
+            return ends.diff(starts, 'y')
         }
         else if (type === 'month') {
-            return diff.months()
+            starts.add(ends.diff(starts, 'y'), 'y')
+            return ends.diff(starts, 'M')
         }
         else if (type === 'day') {
-            return diff.days()
+            starts.add(ends.diff(starts, 'M'), 'M')
+            return ends.diff(starts, 'd')
         }
         else if (type === 'hour') {
-            return diff.hours()
+            starts.add(ends.diff(starts, 'd'), 'd')
+            return ends.diff(starts, 'h')
         }
         else if (type === 'minut') {
-            return diff.minutes()
+            starts.add(ends.diff(starts, 'h'), 'h')
+            return ends.diff(starts, 'm')
         }
         else if (type === 'second') {
-            return diff.seconds()
+            starts.add(ends.diff(starts, 'm'), 'm')
+            return ends.diff(starts, 's')
         }
 
     }
@@ -68,7 +74,7 @@ function Timer() {
                     {years}
                 </Typography>
             </CardContent>
-            
+
         </React.Fragment>
     );
 
@@ -101,7 +107,7 @@ function Timer() {
     const cardHours = (
         <React.Fragment>
             <CardContent>
-                <Typography variant="h5"  color="white" gutterBottom align="center">
+                <Typography variant="h5" color="white" gutterBottom align="center">
                     Horas
                 </Typography>
                 <Typography variant="h5" color="white" align="center">
@@ -139,27 +145,27 @@ function Timer() {
 
     const theme = createTheme({
         palette: {
-          background: {
-            paper: '#1E1E1E', 
-          },
+            background: {
+                paper: '#1E1E1E',
+            },
         },
-      });
+    });
 
     return (
         <ThemeProvider theme={theme}>
-        <span>
-            <Grid container rowSpacing={1} alignItems="center"  justifyContent="center" columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-            <Grid item sm={3}> <Card >{cardYears}</Card> </Grid>
-            <Grid item sm={3}> <Card >{cardMonths}</Card> </Grid>
-            <Grid item sm={3}><Card >{cardDays}</Card> </Grid>
-            </Grid>
-            <br/>
-            <Grid container rowSpacing={1} alignItems="center"  justifyContent="center" columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
-            <Grid item sm={3}><Card >{cardHours}</Card> </Grid>
-            <Grid item sm={3}><Card >{cardMinuts}</Card> </Grid>
-            <Grid item sm={3}><Card >{cardSeconds}</Card> </Grid>
-            </Grid>
-        </span>
+            <span>
+                <Grid container rowSpacing={1} alignItems="center" justifyContent="center" columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+                    <Grid item sm={3}> <Card >{cardYears}</Card> </Grid>
+                    <Grid item sm={3}> <Card >{cardMonths}</Card> </Grid>
+                    <Grid item sm={3}><Card >{cardDays}</Card> </Grid>
+                </Grid>
+                <br />
+                <Grid container rowSpacing={1} alignItems="center" justifyContent="center" columnSpacing={{ xs: 1, sm: 1, md: 1 }}>
+                    <Grid item sm={3}><Card >{cardHours}</Card> </Grid>
+                    <Grid item sm={3}><Card >{cardMinuts}</Card> </Grid>
+                    <Grid item sm={3}><Card >{cardSeconds}</Card> </Grid>
+                </Grid>
+            </span>
         </ThemeProvider>
 
 
