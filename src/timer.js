@@ -133,7 +133,7 @@ function Timer() {
     const cardSeconds = (
         <React.Fragment>
             <CardContent>
-                <Typography sx={{ typography: {xs:'h7', sm: 'h6', md:'h5', lg:'h4'  }}} color="white" gutterBottom align="center">
+                <Typography sx={{ typography: {xs:'h7', sm: 'h7', md:'h5', lg:'h4'  }}} color="white" gutterBottom align="center">
                     Segundos
                 </Typography>
                 <Typography sx={{ typography: {xs:'h7', sm: 'h6', md:'h5', lg:'h4'  }}} color="white" align="center">
