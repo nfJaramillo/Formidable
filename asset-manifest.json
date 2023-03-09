@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Formidable/static/css/main.97657f30.css",
-    "main.js": "/Formidable/static/js/main.64eaffde.js",
+    "main.js": "/Formidable/static/js/main.6a211885.js",
     "static/js/787.2a4b89ec.chunk.js": "/Formidable/static/js/787.2a4b89ec.chunk.js",
     "static/media/Us.png": "/Formidable/static/media/Us.7724cddd68fb581d28b2.png",
     "index.html": "/Formidable/index.html",
     "main.97657f30.css.map": "/Formidable/static/css/main.97657f30.css.map",
-    "main.64eaffde.js.map": "/Formidable/static/js/main.64eaffde.js.map",
+    "main.6a211885.js.map": "/Formidable/static/js/main.6a211885.js.map",
     "787.2a4b89ec.chunk.js.map": "/Formidable/static/js/787.2a4b89ec.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.97657f30.css",
-    "static/js/main.64eaffde.js"
+    "static/js/main.6a211885.js"
   ]
 }
